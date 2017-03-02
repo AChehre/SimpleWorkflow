@@ -17,6 +17,15 @@ namespace Tests
             Assert.Equal(customer.State, CustomerState.Confirmed);
         }
 
+
+        [Fact]
+        public void ChangeStateToConfirmed_DocumentsAreNotSigned_ThrowException()
+        {
+            var customer = new Customer(Guid.NewGuid());
+   
+            Assert.Throws<Exception>(()=>customer.ChangeStateToConfirmed());
+        }
+
         [Fact]
         public void ChangeStateToUnconfirmed_DocumentsAreNotSigned_StateChangeToUnconfirmed()
         {
@@ -26,6 +35,15 @@ namespace Tests
             Assert.Equal(customer.State, CustomerState.Unconfirmed);
         }
 
-      
+        [Fact]
+        public void ChangeStateToUnconfirmed_DocumentsAreSigned_ThrowException()
+        {
+            var customer = new Customer(Guid.NewGuid());
+           customer.SignDocuments();
+
+            Assert.Throws<Exception>(() => customer.ChangeStateToUnconfirmed());
+        }
+
+
     }
 }
