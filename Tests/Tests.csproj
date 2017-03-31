@@ -57,13 +57,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomerTests.cs" />
+    <Compile Include="AnemicModelTests.cs" />
+    <Compile Include="WrongDomainModelTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AnemicModel\Model\Model.csproj">
+      <Project>{ed3c198b-6f67-4f58-9ac3-61231d6dbca5}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AnemicModel\Service\Service.csproj">
+      <Project>{1ee58751-7330-4486-ac02-406a41cf43c9}</Project>
+      <Name>Service</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WrongDomainModel\Domain.Model\Domain.Model.csproj">
       <Project>{fa3ead66-0ee7-4c91-af53-77fe619020f1}</Project>
       <Name>Domain.Model</Name>

@@ -4,7 +4,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class CustomerTests
+    public class WrongDomainModelTests
     {
 
         [Fact]

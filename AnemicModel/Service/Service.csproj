@@ -42,6 +42,21 @@
   <ItemGroup>
     <Compile Include="CustomerService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workflow\BaseCustomerCommand.cs" />
+    <Compile Include="Workflow\CustomerTransition.cs" />
+    <Compile Include="Workflow\NewToConfirmedCommand.cs" />
+    <Compile Include="Workflow\NewToUnconfirmedCommand.cs" />
+    <Compile Include="Workflow\UndefinedToNewCommand.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WrongDomainModel\Infrastructure.Common\Infrastructure.Common.csproj">
+      <Project>{5a04c6b2-b94d-476b-8bba-08ee1be45051}</Project>
+      <Name>Infrastructure.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{ed3c198b-6f67-4f58-9ac3-61231d6dbca5}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

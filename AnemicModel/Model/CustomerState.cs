@@ -1,4 +1,4 @@
-﻿namespace Model
+﻿namespace AnemicModel.Model
 {
     public enum CustomerState
     {

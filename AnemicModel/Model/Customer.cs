@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Model
+namespace AnemicModel.Model
 {
     public class Customer
     {
-        public readonly Guid CustomerId;
+        public Guid CustomerId { get; set; }
         public bool DocumentsSigned { get; set; }
 
         public CustomerState State { get; set; }
