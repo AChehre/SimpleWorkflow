@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
-using Domain.Model.Customer.Workflow;
-using Infrastructure.Common.Workflow;
+using WrongDomainModel.Domain.Model.Customer.Workflow;
+using WrongDomainModel.Infrastructure.Common.Workflow;
 
-namespace Domain.Model.Customer
+namespace WrongDomainModel.Domain.Model.Customer
 {
     public class Customer : Workflow<CustomerState>
     {

@@ -1,6 +1,6 @@
-﻿using Infrastructure.Common.Workflow;
+﻿using WrongDomainModel.Infrastructure.Common.Workflow;
 
-namespace Domain.Model.Customer.Workflow
+namespace WrongDomainModel.Domain.Model.Customer.Workflow
 {
     public class CustomerTransition : Transition<CustomerState>
     {

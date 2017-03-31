@@ -64,11 +64,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Domain.Model\Domain.Model.csproj">
+    <ProjectReference Include="..\WrongDomainModel\Domain.Model\Domain.Model.csproj">
       <Project>{fa3ead66-0ee7-4c91-af53-77fe619020f1}</Project>
       <Name>Domain.Model</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Infrastructure.Common\Infrastructure.Common.csproj">
+    <ProjectReference Include="..\WrongDomainModel\Infrastructure.Common\Infrastructure.Common.csproj">
       <Project>{5a04c6b2-b94d-476b-8bba-08ee1be45051}</Project>
       <Name>Infrastructure.Common</Name>
     </ProjectReference>

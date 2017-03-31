@@ -1,5 +1,5 @@
 ﻿using System;
-using Domain.Model.Customer;
+using WrongDomainModel.Domain.Model.Customer;
 using Xunit;
 
 namespace Tests

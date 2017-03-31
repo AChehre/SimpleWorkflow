@@ -1,4 +1,4 @@
-﻿namespace Infrastructure.Common.Workflow
+﻿namespace WrongDomainModel.Infrastructure.Common.Workflow
 {
     public abstract class Transition<TState>
     {
