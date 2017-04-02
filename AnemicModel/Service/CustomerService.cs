@@ -1,9 +1,9 @@
 ﻿using System;
-using AnemicModel.Model;
+using AnemicModel.Domain.Model;
 using AnemicModel.Service.Workflow;
 using WrongDomainModel.Infrastructure.Common.Workflow;
 
-namespace Service
+namespace AnemicModel.Service
 {
     public class CustomerService : Workflow<CustomerState>
     {

@@ -1,4 +1,4 @@
-﻿namespace AnemicModel.Model
+﻿namespace AnemicModel.Domain.Model
 {
     public enum CustomerState
     {

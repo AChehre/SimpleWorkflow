@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using WrongDomainModel.Domain.Model.Customer.Workflow;
 using WrongDomainModel.Infrastructure.Common.Workflow;
 
@@ -34,17 +33,17 @@ namespace WrongDomainModel.Domain.Model.Customer
 
         public void ChangeStateToNew()
         {
-          ChangeState(CustomerState.New);
+            ChangeState(CustomerState.New);
         }
 
         public void ChangeStateToConfirmed()
         {
-          ChangeState(CustomerState.Confirmed);
+            ChangeState(CustomerState.Confirmed);
         }
 
         public void ChangeStateToUnconfirmed()
         {
-          ChangeState(CustomerState.Unconfirmed);
+            ChangeState(CustomerState.Unconfirmed);
         }
 
         private void ChangeState(CustomerState dest)

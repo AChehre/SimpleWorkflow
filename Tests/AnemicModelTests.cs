@@ -1,6 +1,6 @@
 ﻿using System;
-using AnemicModel.Model;
-using Service;
+using AnemicModel.Domain.Model;
+using AnemicModel.Service;
 using Xunit;
 
 namespace Tests

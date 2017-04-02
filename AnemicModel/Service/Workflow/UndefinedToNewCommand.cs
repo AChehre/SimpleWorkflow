@@ -1,5 +1,5 @@
 ﻿using System;
-using AnemicModel.Model;
+using AnemicModel.Domain.Model;
 using WrongDomainModel.Infrastructure.Common.Workflow;
 
 namespace AnemicModel.Service.Workflow

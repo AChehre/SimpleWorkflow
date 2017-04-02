@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Model", "WrongDomainModel\Domain.Model\Domain.Model.csproj", "{FA3EAD66-0EE7-4C91-AF53-77FE619020F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrongDomainModel.Domain.Model", "WrongDomainModel\Domain.Model\WrongDomainModel.Domain.Model.csproj", "{FA3EAD66-0EE7-4C91-AF53-77FE619020F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Common", "WrongDomainModel\Infrastructure.Common\Infrastructure.Common.csproj", "{5A04C6B2-B94D-476B-8BBA-08EE1BE45051}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrongDomainModel.Infrastructure.Common", "WrongDomainModel\Infrastructure.Common\WrongDomainModel.Infrastructure.Common.csproj", "{5A04C6B2-B94D-476B-8BBA-08EE1BE45051}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{6070E57B-8BBB-46CA-AA67-A64A93DD4295}"
 EndProject
@@ -13,9 +13,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WrongDomainModel", "WrongDo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AnemicModel", "AnemicModel", "{F369D1D1-45C4-4B47-B50E-4795177B7D85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "AnemicModel\Model\Model.csproj", "{ED3C198B-6F67-4F58-9AC3-61231D6DBCA5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnemicModel.Domain.Model", "AnemicModel\Model\AnemicModel.Domain.Model.csproj", "{ED3C198B-6F67-4F58-9AC3-61231D6DBCA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "AnemicModel\Service\Service.csproj", "{1EE58751-7330-4486-AC02-406A41CF43C9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnemicModel.Service", "AnemicModel\Service\AnemicModel.Service.csproj", "{1EE58751-7330-4486-AC02-406A41CF43C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainModel", "DomainModel", "{33EA621F-3A61-4498-9F02-4E38B57602BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainModel.Domain.Model", "DomainModel\Domain.Model\DomainModel.Domain.Model.csproj", "{66AF8D9E-317A-40C4-A794-B430BCF22B89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +47,10 @@ Global
 		{1EE58751-7330-4486-AC02-406A41CF43C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EE58751-7330-4486-AC02-406A41CF43C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EE58751-7330-4486-AC02-406A41CF43C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66AF8D9E-317A-40C4-A794-B430BCF22B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66AF8D9E-317A-40C4-A794-B430BCF22B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66AF8D9E-317A-40C4-A794-B430BCF22B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66AF8D9E-317A-40C4-A794-B430BCF22B89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +60,6 @@ Global
 		{5A04C6B2-B94D-476B-8BBA-08EE1BE45051} = {6530A001-2FCE-44BF-B9BD-77A297AA9CFF}
 		{ED3C198B-6F67-4F58-9AC3-61231D6DBCA5} = {F369D1D1-45C4-4B47-B50E-4795177B7D85}
 		{1EE58751-7330-4486-AC02-406A41CF43C9} = {F369D1D1-45C4-4B47-B50E-4795177B7D85}
+		{66AF8D9E-317A-40C4-A794-B430BCF22B89} = {33EA621F-3A61-4498-9F02-4E38B57602BC}
 	EndGlobalSection
 EndGlobal

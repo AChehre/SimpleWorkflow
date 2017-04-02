@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AnemicModel.Model
+namespace AnemicModel.Domain.Model
 {
     public class Customer
     {

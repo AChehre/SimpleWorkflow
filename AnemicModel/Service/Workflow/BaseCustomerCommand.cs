@@ -1,4 +1,4 @@
-﻿using AnemicModel.Model;
+﻿using AnemicModel.Domain.Model;
 
 namespace AnemicModel.Service.Workflow
 {
