@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Customer\Customer.cs" />
     <Compile Include="Customer\CustomerState.cs" />
-    <Compile Include="Customer\CustomerStateMachine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transition.cs" />
   </ItemGroup>
