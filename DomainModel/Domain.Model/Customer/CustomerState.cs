@@ -1,4 +1,4 @@
-﻿namespace DomainModel.Domain.Model
+﻿namespace DomainModel.Domain.Model.Customer
 {
     public enum CustomerState
     {

@@ -1,5 +1,5 @@
 ﻿using System;
-using DomainModel.Domain.Model;
+using DomainModel.Domain.Model.Customer;
 using Xunit;
 
 namespace Tests
@@ -11,22 +11,20 @@ namespace Tests
         [Fact]
         public void ChangeStateToConfirmed_CustomerStateIsUnconfirmed_ThrowException()
         {
-            //TODO: Fix transitions 
             var customer = new Customer(Guid.NewGuid());
             customer.ChangeStateToUnconfirmed();
 
-            Assert.Throws<Exception>(() => customer.ChangeStateToConfirmed());
+            Assert.Throws<InvalidOperationException>(() => customer.ChangeStateToConfirmed());
         }
 
         [Fact]
         public void ChangeStateToUnconfirmed_CustomerStateIsConfirmed_ThrowException()
         {
-            //TODO: Fix transitions
             var customer = new Customer(Guid.NewGuid());
             customer.SignDocuments();
             customer.ChangeStateToConfirmed();
 
-            Assert.Throws<Exception>(() => customer.ChangeStateToConfirmed());
+            Assert.Throws<InvalidOperationException>(() => customer.ChangeStateToConfirmed());
         }
 
         [Fact]
